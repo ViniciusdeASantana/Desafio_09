@@ -20,25 +20,24 @@ body {
     margin: 0 auto;
     padding: 50px 0px;
 
-    @media(max-width:1220px) {
-        padding: 0px 32px;
-    }
-
-    @media(max-width:930px) {
-        padding: 64px 0px;
+    @media(min-width: 320px) {
+        padding: 64px 16px;
     }
 }
+
+
 
 .hero-info__container {
     display: flex;
     align-items: center;
     justify-content: space-between;
 
-    @media(max-width:1220px) {
+    @media(min-width:320px) {
         padding: 15px 0px;
+        flex-wrap: wrap-reverse;
     }
 
-    @media(max-width:930px) {
+    @media(min-width:930px) {
         flex-wrap: wrap-reverse;
     }
 }
@@ -78,8 +77,9 @@ body {
 .hero-image__people {
     width: 400px;
     height: 460px;
-    @media(max-width:768px) {
-
+    @media(max-width:375px) {
+        width: 207px;
+        height: 240px;
     }
 }
 
